@@ -333,10 +333,12 @@ function drawCards(data) {
        <h5 class="card-title">${element.title}</h5>
        <h5 class="card-title">Price:${element.price}</h5>
        <p class="card-text">
-         ${element.description}
+         ${element.description.SLICE(0, 100)}...
        </p>
        <div class="d-flex justify-content-between aling-items-center">
-       <button href="#" class="btn btn-primary" onclick=addToBasket("${element._id}")>Add to Basket</button>
+       <button href="#" class="btn btn-primary" onclick=addToBasket("${
+         element._id
+       }")>Add to Basket</button>
        <i class="fa-regular fa-heart text-danger"></i></div>
      </div>
     </div>
@@ -361,4 +363,4 @@ function addToBasket(id) {
   console.log(product.amount);
   localStorage.setItem("basket", JSON.stringify(basket));
 }
-let basket=d
+// let basket = d;
