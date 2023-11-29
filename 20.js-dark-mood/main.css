@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 10px;
+}
+.main .toggle{
+    width: 150px;
+   padding: 10px 15px;
+
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.section .card h2{
+    color: blue;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 300px;
+    height: 100px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
