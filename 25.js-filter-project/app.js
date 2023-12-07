@@ -24,9 +24,7 @@ function drawCards(arr) {
     </div>
               <p>${element.title}</p>
               <p>${element.price}</p>
-              
         </a>
-        
       `;
     allCards.append(card);
   });

@@ -50,6 +50,10 @@ nav ul {
     gap: 10px;
    
 }
+.allCards div .img img{
+  width: 200px;
+  height: 260px;
+}
 .allCards div .img{
     width: 200px;
     height: 280px;
