@@ -37,17 +37,17 @@ const employees = [
 
 // TASK 2
 
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  city: "Ganja",
-  website: "code.edu.az",
-  languageInfo: {
-    eng: "Advance",
-    aze: "Fluenty",
-    rus: "Intermediate",
-  },
-};
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   city: "Ganja",
+//   website: "code.edu.az",
+//   languageInfo: {
+//     eng: "Advance",
+//     aze: "Fluenty",
+//     rus: "Intermediate",
+//   },
+// };
 
 // person adlı object-dən firstName-i, languageInfo-dan eng və rus property-ni destructing edin, əlavə olaraq
 // let { firstName, languageInfo: {eng, rus} } = person;
@@ -60,12 +60,12 @@ const person = {
 
 // TASK 3
 
-// const person = {
-//   firstName: "Michael",
-//   lastName: "Pam",
-//   age: 26,
-//   city: "Poland",
-// };
+const person = {
+  firstName: "Michael",
+  lastName: "Pam",
+  age: "26",
+  city: "Poland",
+};
 
 // 1. employees object-nin sadəcə key-lərini console-a çıxardın.
 // console.log(Object.keys(person));
@@ -83,11 +83,11 @@ const person = {
 // let json = JSON.stringify(person);
 // console.log(json);
 // 5. Ən uzun string value-nu console-a çıxardın.
-// let arr = Object.values(person);
-// var longest = arr.reduce(function(a, b) {
-//   return a.length > b.length ? a : b
-// }, '');
-// console.log(longest);
+let arr = Object.values(person);
+var longest = arr.reduce(function(a, b) {
+  return a.length > b.length ? a : b
+}, '');
+console.log(longest);
 // TASK 4
 
 const text = "Java is awesome. Java is fun.";
@@ -111,12 +111,15 @@ function isPalindrome(string) {
 isPalindrome("hello");
 
 // TASK 6
-// function longestWord(a){
-
-// }
-console.log(longestWord("Hello word hi programmers"));
 
 // Ən uzun sözü tapın.  ======>> programmers
+function longestWord(elem){
+  let arr=elem.split("").sort((a,b)=>{
+    return b.length-a.length
+  })
+  return arr[0]
+}
+console.log(longestWord("Hello word hi programmers"));
 
 // TASK 7
 
