@@ -26,15 +26,20 @@ header {
   justify-content: center;
   gap: 50px;
 }
+section {
+  background-color: rgb(252, 246, 240);
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding-top: 80px;
 }
-.card {
+.cards div {
   width: 30%;
-  height: 300px;
+
 }
-.card .img {
-  width: 100px;
+.cards .img img {
+  width: 200px;
+  height: 200px;
 }
